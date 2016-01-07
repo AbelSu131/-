@@ -13,6 +13,7 @@
 		B570AAEF1C3D0A9C006CB092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B570AAED1C3D0A9C006CB092 /* Main.storyboard */; };
 		B570AAF11C3D0A9C006CB092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B570AAF01C3D0A9C006CB092 /* Assets.xcassets */; };
 		B570AAF41C3D0A9C006CB092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B570AAF21C3D0A9C006CB092 /* LaunchScreen.storyboard */; };
+		B570AAFD1C3D0B37006CB092 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = B570AAFC1C3D0B37006CB092 /* PieView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B570AAF01C3D0A9C006CB092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B570AAF31C3D0A9C006CB092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B570AAF51C3D0A9C006CB092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B570AAFB1C3D0B37006CB092 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		B570AAFC1C3D0B37006CB092 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		B570AAD81C3D0A9C006CB092 = {
 			isa = PBXGroup;
 			children = (
+				B570AAFB1C3D0B37006CB092 /* PieView.h */,
+				B570AAFC1C3D0B37006CB092 /* PieView.m */,
 				B570AAE31C3D0A9C006CB092 /* 饼状图 */,
 				B570AAE21C3D0A9C006CB092 /* Products */,
 			);
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B570AAEC1C3D0A9C006CB092 /* ViewController.m in Sources */,
+				B570AAFD1C3D0B37006CB092 /* PieView.m in Sources */,
 				B570AAE91C3D0A9C006CB092 /* AppDelegate.m in Sources */,
 				B570AAE61C3D0A9C006CB092 /* main.m in Sources */,
 			);

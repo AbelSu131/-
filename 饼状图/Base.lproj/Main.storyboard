@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="sm1-io-zGi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="436"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUB-wd-Wnu">
+                                <rect key="frame" x="8" y="468" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcV-EA-OM9">
+                                <rect key="frame" x="8" y="525" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zdh-sl-tZE">
+                                <rect key="frame" x="66" y="464" width="280" height="31"/>
+                                <connections>
+                                    <action selector="Change:" destination="BYZ-38-t0r" eventType="valueChanged" id="N2n-Ks-CB1"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k9i-Kp-Mdo">
+                                <rect key="frame" x="66" y="521" width="280" height="31"/>
+                                <connections>
+                                    <action selector="Change:" destination="BYZ-38-t0r" eventType="valueChanged" id="ckc-iM-5te"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sm1-io-zGi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0EM-qL-dzR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zdh-sl-tZE" secondAttribute="trailing" constant="15" id="0rJ-Ps-FOL"/>
+                            <constraint firstAttribute="trailing" secondItem="sm1-io-zGi" secondAttribute="trailing" id="4ly-qY-Nkc"/>
+                            <constraint firstAttribute="bottom" secondItem="sm1-io-zGi" secondAttribute="bottom" constant="231" id="Ggn-nF-f5G"/>
+                            <constraint firstItem="k9i-Kp-Mdo" firstAttribute="centerY" secondItem="zcV-EA-OM9" secondAttribute="centerY" id="GrZ-SV-OXE"/>
+                            <constraint firstItem="k9i-Kp-Mdo" firstAttribute="top" secondItem="Zdh-sl-tZE" secondAttribute="bottom" constant="27" id="IKo-Ke-UKt"/>
+                            <constraint firstItem="Zdh-sl-tZE" firstAttribute="leading" secondItem="tUB-wd-Wnu" secondAttribute="trailing" constant="18" id="Znc-Gd-b4H"/>
+                            <constraint firstItem="Zdh-sl-tZE" firstAttribute="trailing" secondItem="k9i-Kp-Mdo" secondAttribute="trailing" id="c7y-K1-6GR"/>
+                            <constraint firstItem="k9i-Kp-Mdo" firstAttribute="leading" secondItem="Zdh-sl-tZE" secondAttribute="leading" id="daU-Ut-GJm"/>
+                            <constraint firstItem="zcV-EA-OM9" firstAttribute="leading" secondItem="tUB-wd-Wnu" secondAttribute="leading" id="eNG-ol-cvq"/>
+                            <constraint firstItem="sm1-io-zGi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kjM-dG-bPR"/>
+                            <constraint firstItem="Zdh-sl-tZE" firstAttribute="top" secondItem="sm1-io-zGi" secondAttribute="bottom" constant="28" id="wCE-lz-D6L"/>
+                            <constraint firstItem="Zdh-sl-tZE" firstAttribute="centerY" secondItem="tUB-wd-Wnu" secondAttribute="centerY" id="wCz-dx-yK2"/>
+                            <constraint firstItem="tUB-wd-Wnu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-8" id="zoc-93-DGn"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="holeLabel" destination="tUB-wd-Wnu" id="2To-qC-CVD"/>
+                        <outlet property="holeSlider" destination="Zdh-sl-tZE" id="UE7-Pd-wgl"/>
+                        <outlet property="slicesSlider" destination="k9i-Kp-Mdo" id="Yo1-b7-T6j"/>
+                        <outlet property="valueLabel" destination="zcV-EA-OM9" id="ItW-nm-GoC"/>
+                        <outlet property="vv" destination="sm1-io-zGi" id="5gd-3x-cWq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="303.75" y="399.2957746478873"/>
         </scene>
     </scenes>
 </document>
